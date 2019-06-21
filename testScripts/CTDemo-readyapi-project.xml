@@ -54,7 +54,7 @@
           <con:properties>
             <con:property>
               <con:name>XLPath</con:name>
-              <con:value>C:/Users/mrasakonda/.jenkins/workspace/SampleDemoProject/testScripts/GET.xlsx</con:value>
+              <con:value>C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts/GET.xlsx</con:value>
             </con:property>
           </con:properties>
         </con:config>
@@ -64,7 +64,7 @@
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Excel">
             <con:configuration>
-              <file>C:/Users/mrasakonda/.jenkins/workspace/SampleDemoProject/testScripts/GET.xlsx</file>
+              <file>C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts/GET.xlsx</file>
               <worksheet/>
               <cell>A2</cell>
               <ignoreEmpty>false</ignoreEmpty>
@@ -129,7 +129,7 @@ return "FAIL"
           <con:dataSink type="Excel">
             <con:configuration>
               <file/>
-              <outfile>C:/Users/mrasakonda/.jenkins/workspace/SampleDemoProject/testScripts/GET.xlsx</outfile>
+              <outfile>C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts/GET.xlsx</outfile>
               <worksheet>BMO</worksheet>
               <cell>A2</cell>
               <evaluateFormulas>false</evaluateFormulas>
