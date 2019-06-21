@@ -81,7 +81,7 @@ node {
             emailext (
                 subject: "Failure: Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
                 body: "Check console output at '${env.BUILD_URL}' of '${env.JOB_NAME}'",
-                to: "naresh.manthrabuddi@whishworks.com",
+                to: "mahesh.rasakonda@whishworks.com",
                 from: "jenkins@whishworks.com"
             )
         }
