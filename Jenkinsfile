@@ -1,4 +1,3 @@
-
 node {
    def mvnHome
     properties([
