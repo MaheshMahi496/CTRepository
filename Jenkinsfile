@@ -70,6 +70,7 @@ node {
         stage('Success') {
             echo "Current build status is success::"+currentBuild.currentResult
             emailext (
+				attachmentsPattern: '**/Project Report.pdf',
                 subject: "Success: Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
                 body: "Check console output at '${env.BUILD_URL}' of '${env.JOB_NAME}'",
                 to: "mahesh.rasakonda@whishworks.com",
@@ -80,6 +81,7 @@ node {
         stage('Failed') {
             echo "Curretn build status is Failed"
             emailext (
+				attachmentsPattern: '**/Project Report.pdf',
                 subject: "Failure: Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
                 body: "Check console output at '${env.BUILD_URL}' of '${env.JOB_NAME}'",
                 to: "mahesh.rasakonda@whishworks.com",
