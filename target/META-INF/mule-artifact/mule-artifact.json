@@ -1,0 +1,31 @@
+{
+  "configs": [
+    "Test-test-suite.xml",
+    "Test.xml",
+    "three-test-suite.xml",
+    "new-test-suite.xml",
+    "tlc-test-suite.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany1:devopsdemo:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.1.4",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": [
+        "dev.yaml",
+        "log4j2.xml",
+        "Test.xml",
+        "log4j2-test.xml"
+      ],
+      "includeTestDependencies": "true",
+      "exportedPackages": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
