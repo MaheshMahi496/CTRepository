@@ -1,3 +1,4 @@
+
 node {
    def mvnHome
     properties([
@@ -13,7 +14,7 @@ node {
    
       git branch: 'master',
       credentialsId: '79715904-7926-40c1-9e75-dea587766745',
-      url: 'https://github.com/MaheshMahi496/SampleDemoProject.git'
+      url: 'https://github.com/MaheshMahi496/CTRepository.git'
 	  
    }
    stage('Clean') {
@@ -51,7 +52,7 @@ node {
       } else {
             echo "Deployment Started"
             withCredentials([usernamePassword(credentialsId: 'd26ec363-344f-461b-a1aa-cfd53c565995', passwordVariable: 'ANYPOINT_PASSWORD', usernameVariable: 'ANYPOINT_USERNAME')]) {
-                //bat "mvn deploy -DmuleDeploy -Denv=$ENVIRONMENT -Danypoint.username=${ANYPOINT_USERNAME} -Danypoint.password=${ANYPOINT_PASSWORD}"
+                bat "mvn deploy -DmuleDeploy -Denv=$ENVIRONMENT -Danypoint.username=${ANYPOINT_USERNAME} -Danypoint.password=${ANYPOINT_PASSWORD}"
             }
       }
    }
@@ -71,7 +72,7 @@ node {
             emailext (
                 subject: "Success: Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
                 body: "Check console output at '${env.BUILD_URL}' of '${env.JOB_NAME}'",
-                to: "naresh.manthrabuddi@whishworks.com",
+                to: "mahesh.rasakonda@whishworks.com",
                 from: "jenkins@whishworks.com"
             )
         }
@@ -81,7 +82,7 @@ node {
             emailext (
                 subject: "Failure: Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
                 body: "Check console output at '${env.BUILD_URL}' of '${env.JOB_NAME}'",
-                to: "naresh.manthrabuddi@whishworks.com",
+                to: "mahesh.rasakonda@whishworks.com",
                 from: "jenkins@whishworks.com"
             )
         }
