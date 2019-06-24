@@ -61,7 +61,7 @@ node {
       if (isUnix()) {
          SoapUIPro(environment: '', pathToProjectFile: 'C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts/CTDemo-readyapi-project.xml', pathToTestrunner: 'C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat', projectPassword: '', testCase: '', testSuite: '')        
       } else {
-         SoapUIPro(environment: '', pathToProjectFile: 'C:/Users/tet/mrasakonda/.jenkins/workspace/CTRepository/testScripts/CTDemo-readyapi-project.xml', pathToTestrunner: 'C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat', projectPassword: '', testCase: '', testSuite: '')
+         SoapUIPro(environment: '', pathToProjectFile: 'C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts/CTDemo-readyapi-project.xml', pathToTestrunner: 'C:/Program Files/SmartBear/ReadyAPI-2.7.0/bin/testrunner.bat', projectPassword: '', testCase: '', testSuite: '')
          
       }
    }
