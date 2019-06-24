@@ -65,7 +65,25 @@ node {
          
       }
    }
+   if (currentBuild.currentResult == 'FAILURE') {
+		stage('JIRA') {
+			withEnv(['JIRA_SITE=LOCAL']) {
+			def comment = "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}"
+			def des ="${env.txt}"
+			def testIssue = [fields: [ project: [id: 10000],summary:comment ,description:des,issuetype: [id: 10002]]]
 
+				response = jiraNewIssue issue: testIssue
+        
+
+			echo response.successful.toString()
+			echo response.data.toString()
+
+			}
+           
+           
+       }
+	}
+    
    if (currentBuild.currentResult == 'SUCCESS') {
         stage('Success') {
             echo "Current build status is success::"+currentBuild.currentResult
