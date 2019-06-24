@@ -31,7 +31,7 @@
         </con:representation>
         <con:request name="GET Request" id="bf0ea2fe-a50d-4340-91a8-951524d81a31" mediaType="application/json">
           <con:settings/>
-          <con:endpoint>http://devops-demo.us-e1.cloudhub.io</con:endpoint>
+          <con:endpoint>http://devops-demo.us-e2.cloudhub.io</con:endpoint>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
