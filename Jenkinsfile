@@ -15,6 +15,7 @@ node {
       git branch: 'master',
       credentialsId: '79715904-7926-40c1-9e75-dea587766745',
       url: 'https://github.com/MaheshMahi496/CTRepository.git'
+	  bat 'D:/SampleDemoProjectMule/Gitfile.bat'
 	  
    }
    stage('Clean') {
