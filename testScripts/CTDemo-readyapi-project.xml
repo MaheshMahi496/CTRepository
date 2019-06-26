@@ -31,7 +31,7 @@
         </con:representation>
         <con:request name="GET Request" id="bf0ea2fe-a50d-4340-91a8-951524d81a31" mediaType="application/json">
           <con:settings/>
-          <con:endpoint>1111http://devops-demo.us-e1.cloudhub.io</con:endpoint>
+          <con:endpoint>http://devops-demo.us-e1.cloudhub.io</con:endpoint>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
@@ -65,7 +65,7 @@
           <con:dataSource type="Excel">
             <con:configuration>
               <file>C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts/GET.xlsx</file>
-              <worksheet/>
+              <worksheet>BMO</worksheet>
               <cell>A2</cell>
               <ignoreEmpty>false</ignoreEmpty>
               <evaluateFormulas>false</evaluateFormulas>
@@ -87,7 +87,7 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>1111http://devops-demo.us-e1.cloudhub.io</con:endpoint>
+            <con:endpoint>http://devops-demo.us-e1.cloudhub.io</con:endpoint>
             <con:request/>
             <con:originalUri>11111http://devops-demo.us-e1.cloudhub.io/getData</con:originalUri>
             <con:credentials>
