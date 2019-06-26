@@ -1,5 +1,6 @@
 cd D:\SampleDemoProjectMule
 ::switch to branch you want to use
+git init
 git checkout master
 ::add all added/modified files
 git add .
