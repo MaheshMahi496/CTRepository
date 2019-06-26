@@ -15,7 +15,7 @@ node {
       git branch: 'master',
       credentialsId: '79715904-7926-40c1-9e75-dea587766745',
       url: 'https://github.com/MaheshMahi496/CTRepository.git'
-	  bat 'D:/SampleDemoProjectMule/gitcode.bat'
+	  bat 'D:/SampleDemoProjectMule/code.bat'
 	  
    }
    stage('Clean') {
@@ -89,7 +89,7 @@ node {
         stage('Success') {
             echo "Current build status is success::"+currentBuild.currentResult
             emailext (
-				attachmentsPattern: '**/Project Report.pdf','C:/Users/mrasakonda/.jenkins/workspace/CTRepository/testScripts',
+				attachmentsPattern: '**/Project Report.pdf',
                 subject: "Success: Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
                 body: "Check console output at '${env.BUILD_URL}' of '${env.JOB_NAME}'",
                 to: "mahesh.rasakonda@whishworks.com",
